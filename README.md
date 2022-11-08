@@ -19,7 +19,7 @@ ifcofig
     sudo ip netns list
 
 # 3. create bridge
-    sudo ip link br1 type bridge
+    sudo ip link br1 type bridge(br1)
 
 # 4.create two virtual ethernet cables
     sudo ip link add rveth type veth peer name rsveth
