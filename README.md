@@ -18,8 +18,8 @@ ifcofig
 # 2. show namespaces
     sudo ip netns list
 
-# 3. create bridge
-    sudo ip link br1 type bridge(br1)
+# 3. create bridge(br1)
+    sudo ip link br1 type bridge
 
 # 4.create two virtual ethernet cables
     sudo ip link add rveth type veth peer name rsveth
