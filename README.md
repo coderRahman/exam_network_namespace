@@ -5,11 +5,11 @@
 # Vision
     Make two namespace and connect them through bridge
 
-#show route table
+# show route table
     sudo route
 
-#display information about interfaces currently in operation
-    ifcofig
+# display information about interfaces currently in operation
+ifcofig
 
 # 1.create 2 namespace(red, green)
     sudo ip netns add red
