@@ -19,11 +19,11 @@ ifcofig
     sudo ip netns list
 
 # 3. create bridge(br1)
-    sudo ip link br1 type bridge
+    sudo ip link add br1 type bridge
 
 # 4.create two virtual ethernet cables
     sudo ip link add rveth type veth peer name rsveth
-    sudo ip link add gveth type veth peer name gveth
+    sudo ip link add gveth type veth peer name gsveth
 
 # 4. up the bridge
     sudo ip link set br1 up
@@ -41,7 +41,7 @@ ifcofig
 
 # 7. set the veth in namespaces(red, green)
     sudo ip link set rveth netns red
-    sudo ip link set rveth netns green
+    sudo ip link set gveth netns green
 
 # 7. UP the inerfaces in the namespaces(red, green)
     sudo ip netns exec red ip link set lo up
